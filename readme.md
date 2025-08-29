@@ -72,8 +72,7 @@ Processes an array and returns categorized data.
 Returns operation code for testing purposes.
 
 ## Deployment link
-
-
+https://bajaj-finserv-api-2rjaqerdo-abhisheksingh-22s-projects.vercel.app/bfhl
 
 ## Testing
 
@@ -89,4 +88,5 @@ curl -X POST http://localhost:3000/bfhl \
 
 - Numbers are returned as strings as per requirements
 - The API follows REST conventions with proper error handling
+
 - Swagger documentation is available at `/api-docs`
