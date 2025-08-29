@@ -15,6 +15,7 @@ A REST API built for the VIT Full Stack assignment that processes arrays and cat
 - ✅ Ready for deployment on Vercel
 
 ## Quick Start
+For swagger Docs visit: https://bajajfinservrestapis.onrender.com/api-docs/#/BFHL/post_bfhl
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -91,4 +92,5 @@ curl -X POST http://localhost:3000/bfhl \
 - The API follows REST conventions with proper error handling
 
 - Swagger documentation is available at `/api-docs`
+
 
