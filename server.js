@@ -30,7 +30,7 @@ const swaggerOptions = {
       {
         url:
           process.env.NODE_ENV === "production"
-            ? "https://your-domain.vercel.app"
+            ? "https://bajajfinservrestapis.onrender.com/"
             : `http://localhost:${PORT}`,
         description: "API Server",
       },
