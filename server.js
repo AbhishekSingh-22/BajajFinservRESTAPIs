@@ -40,7 +40,14 @@ const swaggerOptions = {
 };
 
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use("/api-docs",  (req, res, next) => {
+  swaggerSpec.servers = [
+    {
+      url: `${req.protocol}://${req.get('host')}`,
+    },
+  ];
+  next();
+}, swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 
 // Main POST route
