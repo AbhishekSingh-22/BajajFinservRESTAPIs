@@ -49,7 +49,13 @@ const bfhlPost = async (req, res) => {
 const bfhlGet = async (req, res) => {
   try {
     res.status(200).json({
-      operation_code: 1,
+      message: `I used MVC architecture to create separation of concerns for routes and controller. I added Swagger docs as well.
+      
+      Logic behind development:
+        1. The input can be in any format either in plain text or json form -> I have handled that first by checking the content type and converting it into JSON format
+        2. I created different helper functions to process the input data
+        3. Returned the process data in clean format
+      `,
     });
   } catch (error) {
     console.error("Error processing request:", error);
